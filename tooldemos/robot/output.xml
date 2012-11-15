@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.5.6 (Jython 2.5.1 on java1.6.0_29)" generated="20111222 11:52:09.312">
+<suite source="/users/elnino912/desktop/tooldemos/robot/hello.txt" name="Hello">
+<doc/>
+<metadata>
+</metadata>
+<test critical="yes" timeout="" name="Hello World">
+<doc>In order to ensure that the installation works, we run a quick concatenation test</doc>
+<kw type="kw" timeout="" name="${result} = BuiltIn.Catenate">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>Hello</arg>
+<arg>World</arg>
+</arguments>
+<msg timestamp="20111222 11:52:10.246" level="INFO">${result} = Hello World</msg>
+<status status="PASS" starttime="20111222 11:52:10.236" endtime="20111222 11:52:10.243"/>
+</kw>
+<kw type="kw" timeout="" name="BuiltIn.Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>Hello World</arg>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" starttime="20111222 11:52:10.249" endtime="20111222 11:52:10.280"/>
+</kw>
+<tags>
+</tags>
+<status status="PASS" starttime="20111222 11:52:10.224" endtime="20111222 11:52:10.303"/>
+</test>
+<status status="PASS" starttime="20111222 11:52:09.459" endtime="20111222 11:52:10.308"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" doc="Hello" fail="0">Hello</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,6 @@
+!3 !-fit-!
+|'''Date: '''|!-8:45:13 AM (CST) on Thursday, December 22, 2011-!|
+|'''Test Page: '''|.PayRoll|
+|'''Command: '''|!-java -cp fitnesse.jar:helloworld/bin:lib/fitlibrary.jar:lib/fitnesse.jar:fitnesse.jar:classes fit.FitServer localhost 8080 1-!|
+|'''Exit code: '''|!-4-!|
+|'''Time elapsed: '''|!-1.15 seconds-!|

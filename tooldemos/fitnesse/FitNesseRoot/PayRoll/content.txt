@@ -1,0 +1,4 @@
+!path helloworld/bin
+!path lib/fitlibrary.jar
+
+!contents -R2 -g -p -f -h

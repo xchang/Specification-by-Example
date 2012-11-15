@@ -1,0 +1,23 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+
+    <body>
+    <h1>As a quick example, in order to verify that Concordion works, I want to execute 
+    a string concatenation check</h1>
+    
+    <p>When the action is <span concordion:set="#action">Hello</span> and the subject is <span concordion:set="#subject">World</span>
+    then the greeting should be 
+    <span concordion:assertEquals="getGreeting(#action, #subject)">Hello, World</span>!.</p>
+    
+    <p>Or, said differently: </p>
+    <p concordion:execute="#result = getGreeting(#action, #subject)">
+    
+   		 The greeting <span concordion:assertEquals="#result">Hello, World</span>! is the right one when the
+    	action is <span concordion:set="#action">Hello</span> and the subject is <span concordion:set="#subject">World</span>.
+	
+	</p>
+
+	<p>When the separator is <span concordion:execute="setSeparator(#TEXT)">!</span>, the action is <span concordion:set="#action">Hello</span> and the subject is <span concordion:set="#subject">World</span>
+    then the greeting should be 
+    <span concordion:assertEquals="getGreeting(#action, #subject)">Hello! World</span>!.</p>
+    </body>
+</html>

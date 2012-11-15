@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091121</FitNesseVersion>
+  <rootPath>DealerActions</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<br/><div class="setup">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('2957058195284557405');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2957058195284557405"/>
+	</a>
+&nbsp;<span class="meta">Set Up: <a href="BlackJack.SetUp">.BlackJack.SetUp</a> <a href="BlackJack.SetUp?edit&amp;redirectToReferer=true&amp;redirectAction=">(edit)</a></span>
+	<div class="hidden" id="2957058195284557405"><table border="1" cellspacing="0" _TABLENUMBER=1022381210920689919>
+<tr><td>import</td>
+</tr>
+<tr><td>blackjack</td>
+</tr>
+</table>
+</div>
+</div>
+<h3>Dealer hits until 17 or higher</h3><br/><table border="1" cellspacing="0" _TABLENUMBER=6979933296337705229>
+<tr><td colspan="2"><span class="pass">Dealer action based on hand value</span></td>
+</tr>
+<tr><td>hand value</td>
+<td>action?</td>
+</tr>
+<tr><td>16</td>
+<td>[null] <span class="fail">expected [Hit]</span></td>
+</tr>
+<tr><td>17</td>
+<td>[null] <span class="fail">expected [Stand]</span></td>
+</tr>
+<tr><td>18</td>
+<td>[null] <span class="fail">expected [Stand]</span></td>
+</tr>
+</table>
+]]></content>
+    <relativePageName>DealerActions</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[blackjack]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(Dealer action based on hand value)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[hand value]]></col>
+                    <col><![CDATA[action?]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[16]]></col>
+                    <col><![CDATA[[null] fail(expected [Hit])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[17]]></col>
+                    <col><![CDATA[[null] fail(expected [Stand])]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[18]]></col>
+                    <col><![CDATA[[null] fail(expected [Stand])]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, blackjack]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, DealerActionBasedOnHandValue]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[Dealer action based on hand value]]></expected>
+                              <evaluationMessage><![CDATA[pass(Dealer action based on hand value)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, [[hand value, action?], [16, Hit], [17, Stand], [18, Stand]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] blackjack.DealerActionBasedOnHandValue.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:680)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_2, call, decisionTable_1, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] blackjack.DealerActionBasedOnHandValue.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:680)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_3, call, decisionTable_1, setHandValue, 16]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[16]]></expected>
+                              <evaluationMessage><![CDATA[16]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_4, call, decisionTable_1, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] blackjack.DealerActionBasedOnHandValue.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:680)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_5, call, decisionTable_1, action]]]></instruction>
+        <slimResult><![CDATA[null]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>decisionTable_1_5</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[null]]></actual>
+                              <expected><![CDATA[Hit]]></expected>
+                              <evaluationMessage><![CDATA[[null] fail(expected [Hit])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_6, call, decisionTable_1, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] blackjack.DealerActionBasedOnHandValue.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:680)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_7, call, decisionTable_1, setHandValue, 17]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_7</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[17]]></expected>
+                              <evaluationMessage><![CDATA[17]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_8, call, decisionTable_1, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] blackjack.DealerActionBasedOnHandValue.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:680)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_9, call, decisionTable_1, action]]]></instruction>
+        <slimResult><![CDATA[null]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>decisionTable_1_9</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[null]]></actual>
+                              <expected><![CDATA[Stand]]></expected>
+                              <evaluationMessage><![CDATA[[null] fail(expected [Stand])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_10, call, decisionTable_1, reset]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS reset[0] blackjack.DealerActionBasedOnHandValue.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:680)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_11, call, decisionTable_1, setHandValue, 18]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_11</instructionId>
+          <col>0</col>
+          <row>4</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[18]]></expected>
+                              <evaluationMessage><![CDATA[18]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_12, call, decisionTable_1, execute]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS execute[0] blackjack.DealerActionBasedOnHandValue.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:680)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_13, call, decisionTable_1, action]]]></instruction>
+        <slimResult><![CDATA[null]]></slimResult>
+                <expectation>
+          <status>wrong</status>
+          <instructionId>decisionTable_1_13</instructionId>
+          <col>1</col>
+          <row>4</row>
+          <type>ReturnedValueExpectation</type>
+                    <actual><![CDATA[null]]></actual>
+                              <expected><![CDATA[Stand]]></expected>
+                              <evaluationMessage><![CDATA[[null] fail(expected [Stand])]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

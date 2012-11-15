@@ -1,0 +1,29 @@
+Tags:
+Preconditions:WebContext
+Initial page requires log on
+
+User Interface Steps:
+#the user opens page "/"
+#the page contains text "You are not logged in."
+
+Shop page requires log in
+
+User Interface Steps:
+#the user opens page "/shop.php"
+#the page contains text "You are not logged in."
+
+Shop page shows books after logging in
+
+User Interface Steps:
+#the user opens page "/"
+#the user clicks on the "Log in" link
+#the user types "x" into the "user" field
+#the user types "x" into the "password" field  
+#the user clicks on the "login" button
+#the page contains text "You are now logged in as x."
+#the user clicks on the "Continue shopping" link
+#the page contains text "Working effectively with legacy code"
+
+
+
+

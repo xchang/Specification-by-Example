@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans org/springframework/beans/factory/xml/spring-beans-2.5.xsd">
+
+	<bean id="browserDriver" class="webexample.BrowserDriver" >
+		<property name="baseUrl" value="http://localhost/shop" />
+		<property name="browser" value="Firefox" />
+		<property name="timeout" value="10" />
+	</bean>
+</beans>

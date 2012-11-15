@@ -1,0 +1,12 @@
+***Settings***
+Library    robottest.IntTest 
+
+***Test Cases***
+Comparison
+    ${n}=	number	
+    Should be Equal		${n}	20000 
+
+
+Int Comparison
+    ${n}=	number	
+    Should be Equal as Integers		${n}	20000 

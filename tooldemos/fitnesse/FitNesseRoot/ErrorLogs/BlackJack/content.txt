@@ -1,0 +1,6 @@
+!3 !-slim-!
+|'''Date: '''|!-11:43:55 AM (EST) on Thursday, May 12, 2011-!|
+|'''Test Page: '''|.BlackJack|
+|'''Command: '''|!-java -cp fitnesse.jar:helloworld/bin:lib/fitnesse.jar:fitnesse.jar:classes fitnesse.slim.SlimService  8090-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.719 seconds-!|

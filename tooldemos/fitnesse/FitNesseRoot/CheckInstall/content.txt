@@ -1,0 +1,14 @@
+!*> configuration
+
+!define TEST_SYSTEM {slim}
+
+!path helloworld/bin
+
+|import|
+|demo|
+
+*!
+
+|Greeting|
+|action|subject|greeting?|
+|Hello|World|Hello, World|

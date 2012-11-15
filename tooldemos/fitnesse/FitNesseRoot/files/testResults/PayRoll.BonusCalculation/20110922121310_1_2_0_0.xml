@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20110104</FitNesseVersion>
+  <rootPath>BonusCalculation</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>2</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>52</runTimeInMillis>
+    <content><![CDATA[<div class="collapse_rim">
+	<div style="float: right;" class="meta">
+		<a href="javascript:expandAll();">Expand All</a>
+ | 
+		<a href="javascript:collapseAll();">Collapse All</a>
+	</div>
+	<a href="javascript:toggleCollapsable('2');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img2"/>
+	</a>
+&nbsp;
+	<span class="meta">context</span>
+	<div class="hidden" id="2"><br/><table border="1" cellspacing="0">
+	<tr>
+		<td>Import</td>
+	</tr>
+	<tr>
+		<td>payroll</td>
+	</tr>
+</table>
+<br/></div>
+</div>
+<br/><br/><h3>End of year bonus calculations</h3>
+<br/><br/>The company provides employees with end-of-year bonuses based on their level and base salary. <br/><br/><br/><table border="1" cellspacing="0">
+	<tr>
+		<td colspan="3">Bonus Calculation</td>
+	</tr>
+	<tr>
+		<td>employee level</td>
+		<td>salary</td>
+		<td>bonus?</td>
+	</tr>
+	<tr>
+		<td>Manager</td>
+		<td>75000</td>
+		<td class="fail">30000 <span class="fit_label">expected</span><hr>0 <span class="fit_label">actual</span></td>
+	</tr>
+	<tr>
+		<td>Intern</td>
+		<td>5000</td>
+		<td class="pass">0</td>
+	</tr>
+	<tr>
+		<td>Lab rat</td>
+		<td>10000</td>
+		<td class="fail">1000 <span class="fit_label">expected</span><hr>0 <span class="fit_label">actual</span></td>
+	</tr>
+</table>
+<br/>]]></content>
+    <relativePageName>BonusCalculation</relativePageName>
+        <tags>slow, requiresdb</tags>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

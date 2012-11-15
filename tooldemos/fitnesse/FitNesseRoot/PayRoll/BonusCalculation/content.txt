@@ -1,0 +1,18 @@
+!*> context
+
+|Import|
+|payroll|
+
+*!
+
+!3 End of year bonus calculations
+
+The company provides employees with end-of-year bonuses based on their level and base salary. 
+
+
+!|Bonus Calculation|
+| employee level | salary | bonus? |
+| Manager | 75000 | 30000 |
+| Intern  | 5000 | 0 |
+| Lab rat | 10000 | 1000 | 
+

@@ -1,0 +1,20 @@
+FitNesse
+1. go to fitnesse folder
+2. execute run.bat or run.sh
+3. open browser, go to http://localhost:8080
+4. click on CheckInstall
+5. click on Test (left hand menu). It should be nice and green
+
+Concordion
+1. Open eclipse
+2. Import concordion project
+3. run folder specs/demo as a JUnit test. It should be nice and green
+
+Robot framework
+1. go to robot folder
+2. run checkinstall.bat or checkinstall.sh. It should say [Pass] in green
+3. open report.html in a browser, it should be nice and green
+
+Cucumber
+1. go to cucumber folder
+2. run checkinstall.sh or checkinstall.bat. It should be nice and green

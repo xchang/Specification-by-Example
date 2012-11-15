@@ -1,0 +1,9 @@
+***Settings***
+Library    robottest.BonusCalculator 
+
+***Test Cases***
+Manager Bonus Calculation
+    Set Employee Level	Manager
+    Set Salary			75000
+    ${bonus}=	bonus
+    Should be Equal as Integers		${bonus}	20000 

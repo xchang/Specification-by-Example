@@ -1,0 +1,15 @@
+!SESSION 2011-03-31 22:01:45.203 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -showLocation -keyring /Users/gojkoadzic/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -showLocation -keyring /Users/gojkoadzic/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.ui 2 0 2011-03-31 22:03:02.451
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2011-03-31 22:03:02.451
+!MESSAGE Commands should really have a category: plug-in='com.thoughtworks.twist.eclipse.ui', id='com.thoughtworks.twist.eclipse.ui.launch.launchScenarioShortcut.debug', categoryId='org.eclipse.debug.ui.category.debug'
+
+!ENTRY org.eclipse.core.net 1 0 2011-03-31 22:03:07.317
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

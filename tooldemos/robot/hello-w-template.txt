@@ -1,0 +1,12 @@
+***Settings***
+Test Template    Check Joined 
+
+***Test Cases***
+
+Expected to pass	Hello	World	Hello World
+Doomed to fail		Hello	World	Hello Mike 
+
+***Keywords***
+Check Joined  [Arguments]  ${first}  ${second}  ${expected}
+	${result}=	Catenate	${first}	${second} 
+	Should Be Equal	${expected}	${result} 

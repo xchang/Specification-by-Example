@@ -1,0 +1,6 @@
+!3 !-fit-!
+|'''Date: '''|!-12:06:19 PM (BST) on Friday, April 1, 2011-!|
+|'''Test Page: '''|.FrontPage.QuestionPropagation|
+|'''Command: '''|!-java -cp fitnesse.jar:lib/fitnesse.jar:fitnesse.jar:classes fit.FitServer Raketa.local 8080 3-!|
+|'''Exit code: '''|!-1-!|
+|'''Time elapsed: '''|!-0.548 seconds-!|

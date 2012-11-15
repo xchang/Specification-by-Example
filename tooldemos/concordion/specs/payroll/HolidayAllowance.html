@@ -1,0 +1,24 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+  <h1>Employees have a yearly holiday allowance of days and they can buy more or exchange unused days for cash</h1>
+
+<div class="example">
+<p>
+  Given the following employees:
+  <table concordion:execute="addEmployee(#name,#free)">
+  <tr><th concordion:set="#name">Name</th><th concordion:set="#free">Free days left</th></tr>
+  <tr><td>John </td><td> 2 </td></tr>
+  <tr><td>Gina </td><td> 0 </td></tr>
+  
+  </table>
+ </p>
+ <p> Then the following holiday bonuses should be paid at the end of the month
+ </p>
+ 
+  <table concordion:verifyRows="#user: getEmployeesForBonus()">
+ 	<tr><th concordion:assertEquals="#user.employeeName">Employee Name</th></tr>
+ 	<tr><td>John</td></tr>
+ </table> 
+ </div>
+ </body>
+ </html>  

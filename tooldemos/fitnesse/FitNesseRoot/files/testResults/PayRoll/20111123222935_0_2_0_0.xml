@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20110104</FitNesseVersion>
+  <rootPath>PayRoll</rootPath>
+    <pageHistoryReference>
+    <name>PayRoll.BonusCalculation</name>
+    <date>11/23/2011 22:29:35</date>
+    <pageHistoryLink>PayRoll.BonusCalculation?pageHistory&amp;resultDate=20111123222935</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>2</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>73</runTimeInMillis>
+  </pageHistoryReference>
+    <pageHistoryReference>
+    <name>PayRoll.HolidayAllowance</name>
+    <date>11/23/2011 22:29:35</date>
+    <pageHistoryLink>PayRoll.HolidayAllowance?pageHistory&amp;resultDate=20111123222935</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>2</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>98</runTimeInMillis>
+  </pageHistoryReference>
+    <finalCounts>
+    <right>0</right>
+    <wrong>2</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>958</totalRunTimeInMillis>
+
+</suiteResults>
+

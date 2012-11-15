@@ -1,0 +1,15 @@
+Tags:
+Preconditions:
+The company provides employees with end-of-year bonuses based on their level and base salary. 
+
+Bonus Calculation:
+#Employee level is "Manager"
+#And  he is paid "75000"
+#When the end of year bonus is paid
+#Then the employee should receive a bonus of "20000"
+
+Bonus Calculation:
+#Employee level is "Lab Rat"
+#And  he is paid "100"
+#When the end of year bonus is paid
+#Then the employee should receive a bonus of "0"

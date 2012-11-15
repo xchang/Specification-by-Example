@@ -1,0 +1,6 @@
+!3 !-fit-!
+|'''Date: '''|!-5:10:34 PM (GMT) on Wednesday, December 7, 2011-!|
+|'''Test Page: '''|.PayRoll.HolidayAllowance|
+|'''Command: '''|!-java -cp fitnesse.jar:helloworld/bin:lib/fitlibrary.jar:lib/fitnesse.jar:fitnesse.jar:classes fit.FitServer Raketa.local 8080 2-!|
+|'''Exit code: '''|!-2-!|
+|'''Time elapsed: '''|!-0.921 seconds-!|

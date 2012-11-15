@@ -1,0 +1,10 @@
+Tags:
+Preconditions:
+In order to verify that my environment is set up correctly, I want to execute a quick test
+My story is very important because ....
+
+
+Greeting:
+#Given the object is "World"
+#And the action is "Hello"
+#Then the greeting is "Hello World"

@@ -1,0 +1,16 @@
+***Settings***
+Library    robottest.BonusCalculator 
+Test Template    Expected Bonus 
+
+***Test Cases***
+
+Managers get a huge bonus	Manager	70000	20000
+Interns get nothing			Intern	10000	0
+Lab rats get a bit			Lab rat	10000	1000	
+
+***Keywords***
+Expected Bonus	[Arguments]	${level}	${salary}	${expected_bonus}
+    Set Employee Level	${level}
+    Set Salary			${salary}
+    ${bonus}=	Bonus
+    Should be Equal as Integers		${bonus}	${expected_bonus} 

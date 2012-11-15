@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091121</FitNesseVersion>
+  <rootPath>DealerActions</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <content><![CDATA[<h3>Dealer hits until 17 or higher</h3><br/><br/><table border="1" cellspacing="0">
+<tr><td colspan="2" class="error">dealer actions based on hand value<hr/> <span class="fit_label">Could not find fixture: DealerActionsBasedOnHandValue.</span></td>
+</tr>
+<tr><td>hand value</td>
+<td>action ?</td>
+</tr>
+<tr><td>17</td>
+<td>stand</td>
+</tr>
+<tr><td>16</td>
+<td>hit</td>
+</tr>
+<tr><td>18</td>
+<td>stand</td>
+</tr>
+<tr><td>BJ</td>
+<td>stand</td>
+</tr>
+</table>
+]]></content>
+    <relativePageName>DealerActions</relativePageName>
+    
+    
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

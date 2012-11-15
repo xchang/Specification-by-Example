@@ -1,0 +1,5 @@
+***Test Cases***
+
+Hello World  [Documentation]  In order to ensure that the installation works, we run a quick concatenation test
+  ${result}=  Catenate  Hello  World
+  Should Be Equal  Hello World  ${result} 

@@ -1,0 +1,8 @@
+!3 This example is for SAP bonuses
+
+
+Each employee gets a 1.000.000 bonus if they were good
+
+|employee name|good or not|bonus?|
+|Mark | good| 1.000.000 |
+| Klaus | no | 0 | 

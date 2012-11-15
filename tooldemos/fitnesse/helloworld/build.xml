@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ex" default="test">
+	<property name="src" value="src" />
+	<property name="bin" value="bin" />
+	<property name="libdir" value="lib" />
+	<target name="clean">
+	  <delete failonerror="false" dir="${bin}" includeemptydirs="true"/>
+	  <mkdir dir="${bin}"/>
+	</target>
+	<target name="compile" depends="clean">
+		<javac srcdir="${src}" 
+			destdir="${bin}" 
+			classpath="${libdir}/fitnesse.jar:${libdir}/fitlibrary.jar"/>
+	</target>
+	
+</project>

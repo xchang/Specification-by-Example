@@ -1,0 +1,7 @@
+!path lib/fitnesse.jar
+
+!path fitnesse.jar
+!path classes
+
+
+!contents -R

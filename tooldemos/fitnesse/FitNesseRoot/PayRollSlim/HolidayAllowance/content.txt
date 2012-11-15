@@ -1,0 +1,19 @@
+!3 Holiday Allowance
+
+!*> context
+
+|import|
+|payrollslim|
+
+*!
+
+The company pays employees a bonus each month when they have not used all their holiday allowance. 
+
+!|free days left|
+|employee name|free days left|
+| John | 2 |
+| Gina | 0 |
+
+!|query:holiday bonuses paid to employees|
+|employee name| 
+|John|

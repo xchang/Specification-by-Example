@@ -1,0 +1,8 @@
+Tags:critical,veryslow,requires clean db,run in tx
+Preconditions:init
+Employees are paid a yearly bonus based on their level. Here are the examples
+
+|Employee Bonuses@|level|salary|bonus?|
+|Manager|75000|20000|
+|Lab Rat|10000|1000|
+|Intern|10000|0|

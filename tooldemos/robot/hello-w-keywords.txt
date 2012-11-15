@@ -1,0 +1,12 @@
+***Test Cases***
+
+Hello World  [Documentation]  In order to ensure that the installation works, we run a quick concatenation test
+	Check Joined	Hello	World	Hello World
+
+Doomed  [Documentation]  This one is doomed
+	Check Joined	Hello	World	Hello Mike 
+
+***Keywords***
+Check Joined  [Arguments]  ${first}  ${second}  ${expected}
+	${result}=	Catenate	${first}	${second} 
+	Should Be Equal	${expected}	${result} 

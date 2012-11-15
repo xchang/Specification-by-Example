@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20091121</FitNesseVersion>
+  <rootPath>HolidayAllowance</rootPath>
+    <result>
+    <counts>
+      <right>3</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <content><![CDATA[<h3>Holiday Allowance</h3><br/><div class="collapse_rim">
+	<div style="float: right;" class="meta"><a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a></div>
+	<a href="javascript:toggleCollapsable('-547008864468753131');">
+		<img src="/files/images/collapsableClosed.gif" class="left" id="img-547008864468753131"/>
+	</a>
+&nbsp;<span class="meta">context </span>
+	<div class="hidden" id="-547008864468753131"><br/><table border="1" cellspacing="0" _TABLENUMBER=5388523188264731966>
+<tr><td>import</td>
+</tr>
+<tr><td>payrollslim</td>
+</tr>
+</table>
+</div>
+</div>
+<br/>The company pays employees a bonus each month when they have not used all their holiday allowance.<br/><br/><table border="1" cellspacing="0" _TABLENUMBER=6889432261556279492>
+<tr><td colspan="2"><span class="pass">free days left</span></td>
+</tr>
+<tr><td>employee name</td>
+<td>free days left</td>
+</tr>
+<tr><td>John</td>
+<td>2</td>
+</tr>
+<tr><td>Gina</td>
+<td>0</td>
+</tr>
+</table>
+<br/><table border="1" cellspacing="0" _TABLENUMBER=7614945845037750481>
+<tr class="hidden"><td><span class="pass">query:holiday bonuses paid to employees</span></td>
+</tr>
+<tr><td>employee name</td>
+</tr>
+<tr><td><span class="pass">John</span></td>
+</tr>
+<TR><TD>[Gina] <span class="fail">surplus</span></TD></TR></table>
+]]></content>
+    <relativePageName>HolidayAllowance</relativePageName>
+    
+        <tables>
+            <table>
+        <name>import_0</name>
+                <row>
+                    <col><![CDATA[import]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[payrollslim]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>decisionTable_1</name>
+                <row>
+                    <col><![CDATA[pass(free days left)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[employee name]]></col>
+                    <col><![CDATA[free days left]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[John]]></col>
+                    <col><![CDATA[2]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[Gina]]></col>
+                    <col><![CDATA[0]]></col>
+          
+        </row>
+        
+      </table>
+            <table>
+        <name>queryTable_2</name>
+                <row>
+                    <col><![CDATA[pass(query:holiday bonuses paid to employees)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[employee name]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[pass(John)]]></col>
+          
+        </row>
+                <row>
+                    <col><![CDATA[[Gina] fail(surplus)]]></col>
+          
+        </row>
+        
+      </table>
+      
+    </tables>
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction><![CDATA[[import_0_0, import, payrollslim]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_0, make, decisionTable_1, FreeDaysLeft]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>decisionTable_1_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[free days left]]></expected>
+                              <evaluationMessage><![CDATA[pass(free days left)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_1, call, decisionTable_1, table, [[employee name, free days left], [John, 2], [Gina, 0]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] payrollslim.FreeDaysLeft.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:680)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_2, call, decisionTable_1, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_3, call, decisionTable_1, setEmployeeName, John]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_3</instructionId>
+          <col>0</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[John]]></expected>
+                              <evaluationMessage><![CDATA[John]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_4, call, decisionTable_1, setFreeDaysLeft, 2]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_4</instructionId>
+          <col>1</col>
+          <row>2</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[2]]></expected>
+                              <evaluationMessage><![CDATA[2]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_5, call, decisionTable_1, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_6, call, decisionTable_1, reset]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_7, call, decisionTable_1, setEmployeeName, Gina]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_7</instructionId>
+          <col>0</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[Gina]]></expected>
+                              <evaluationMessage><![CDATA[Gina]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_8, call, decisionTable_1, setFreeDaysLeft, 0]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+                <expectation>
+          <status>ignored</status>
+          <instructionId>decisionTable_1_8</instructionId>
+          <col>1</col>
+          <row>3</row>
+          <type>VoidReturnExpectation</type>
+                    <actual><![CDATA[/__VOID__/]]></actual>
+                              <expected><![CDATA[0]]></expected>
+                              <evaluationMessage><![CDATA[0]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[decisionTable_1_9, call, decisionTable_1, execute]]]></instruction>
+        <slimResult><![CDATA[/__VOID__/]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[queryTable_2_0, make, queryTable_2, HolidayBonusesPaidToEmployees]]]></instruction>
+        <slimResult><![CDATA[OK]]></slimResult>
+                <expectation>
+          <status>right</status>
+          <instructionId>queryTable_2_0</instructionId>
+          <col>0</col>
+          <row>0</row>
+          <type>ConstructionExpectation</type>
+                    <actual><![CDATA[OK]]></actual>
+                              <expected><![CDATA[query:holiday bonuses paid to employees]]></expected>
+                              <evaluationMessage><![CDATA[pass(query:holiday bonuses paid to employees)]]></evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[queryTable_2_1, call, queryTable_2, table, [[employee name], [John]]]]]></instruction>
+        <slimResult><![CDATA[__EXCEPTION__:fitnesse.slim.SlimError: message:<<NO_METHOD_IN_CLASS table[1] payrollslim.HolidayBonusesPaidToEmployees.>>
+	at fitnesse.slim.StatementExecutor.findMatchingMethod(StatementExecutor.java:198)
+	at fitnesse.slim.StatementExecutor.tryToInvokeMethod(StatementExecutor.java:170)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:144)
+	at fitnesse.slim.Statement.callMethodAtIndex(Statement.java:99)
+	at fitnesse.slim.Statement.call(Statement.java:92)
+	at fitnesse.slim.Statement.execute(Statement.java:72)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:36)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:93)
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:78)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:69)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:55)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:30)
+	at fitnesse.socketservice.SocketService$ServerRunner.run(SocketService.java:88)
+	at java.lang.Thread.run(Thread.java:680)
+]]></slimResult>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction><![CDATA[[queryTable_2_2, call, queryTable_2, query]]]></instruction>
+        <slimResult><![CDATA[[[[employee name, John]], [[employee name, Gina]]]]]></slimResult>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+  
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  
+</testResults>
+

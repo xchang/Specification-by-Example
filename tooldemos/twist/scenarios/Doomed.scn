@@ -1,0 +1,7 @@
+Tags:
+Preconditions:
+
+Greeting:
+#Given the object is "World"
+#And the action is "Hello"
+#Then the greeting is "Hello Mike"

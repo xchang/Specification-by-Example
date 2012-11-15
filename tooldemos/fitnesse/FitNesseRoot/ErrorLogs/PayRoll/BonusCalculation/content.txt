@@ -1,0 +1,6 @@
+!3 !-fit-!
+|'''Date: '''|!-11:20:58 AM (CST) on Monday, December 19, 2011-!|
+|'''Test Page: '''|.PayRoll.BonusCalculation|
+|'''Command: '''|!-java -cp fitnesse.jar:helloworld/bin:lib/fitlibrary.jar:lib/fitnesse.jar:fitnesse.jar:classes fit.FitServer Raketa.local 8080 1-!|
+|'''Exit code: '''|!-2-!|
+|'''Time elapsed: '''|!-0.834 seconds-!|

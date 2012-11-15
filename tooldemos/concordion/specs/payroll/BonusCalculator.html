@@ -1,0 +1,32 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+    <h1>The company provides employees with end-of-year bonuses 
+ based on their level and base salary. </h1>
+  	<div class="example">
+    <p>
+    A <span concordion:set="#employeeLevel">Manager</span>
+    with a salary of $<span concordion:set="#salary">75000</span>
+    should receive $<span concordion:assertEquals="getBonus(#employeeLevel, #salary)">20000</span> as his end of year bonus.
+    </p> 
+    </div>
+    
+   <p>Actually, here are all employee levels and their bonuses</p>
+   
+   <table concordion:execute="#result=getBonus(#employeeLevel, #salary)">
+   <tr>
+   <th concordion:set="#employeeLevel">Employee level</th>
+   <th concordion:set="#salary">Salary</th>
+   <th concordion:assertEquals="#result">Expected Bonus</th>
+   </tr>
+   <tr>
+  	<td>Manager</td><td>75000</td><td>20000</td>
+   </tr>
+   <tr>
+  		<td>Lab rat</td><td>10000</td><td>1000</td>
+   </tr>
+   	<tr>
+  	<td>Intern</td><td>7000</td><td>0</td>
+   </tr>
+	</table>
+	</body>
+</html>

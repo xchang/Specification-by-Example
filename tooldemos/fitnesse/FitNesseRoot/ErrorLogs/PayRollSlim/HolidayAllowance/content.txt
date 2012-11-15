@@ -1,0 +1,6 @@
+!3 !-slim-!
+|'''Date: '''|!-10:29:52 PM (GMT) on Wednesday, November 23, 2011-!|
+|'''Test Page: '''|.PayRollSlim.HolidayAllowance|
+|'''Command: '''|!-java -cp fitnesse.jar:helloworld/bin:lib/fitnesse.jar:fitnesse.jar:classes fitnesse.slim.SlimService  8087-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-0.755 seconds-!|
